@@ -1,0 +1,65 @@
+class next {
+    public static void main (String[] args) {
+        
+        Scanner hi = new Scanner (System.in);
+        
+        int R;
+        int V;
+        int I;
+        R = 1;
+        V = 2;
+        I = 3;
+        int yo;
+        int T;
+        int result;
+    System.out.print("Welcome to electrical ress, volt, and current calculator press 5 to continue");
+            yo=hi.nextInt();
+            
+         if (yo ==5) {
+             
+             System.out.print("press 1 for ress press 2 for volt press 3 for current");
+             T=hi.nextInt();
+             
+            switch (T) {
+                
+                case 1:
+                    System.out.print("Enter the value of volt = ");
+                    V=hi.nextInt();
+                    System.out.print("Enter the value of current = "); 
+                    I=hi.nextInt();
+                    result = V/I;
+                    
+                     System.out.print("Total ress = "+result);
+                    
+                    break;
+                    
+                case 2:
+                    System.out.println("Enter the value of current = ");
+                    I=hi.nextInt();
+                     System.out.print("Enter the value of Ress = ");
+                     R=hi.nextInt();
+                     
+                     result = I*R;
+                     System.out.print("Total volt = "+result);
+                     break;
+                     
+                case 3:
+                    System.out.println("Enter the value of volt = ");
+                     V=hi.nextInt();
+                     System.out.println("Enter the value of ress = ");
+                     R=hi.nextInt();
+                     result= V/R;
+                     System.out.print("Total Current = "+result);
+                    break; 
+            }
+            
+           
+        }
+         else {
+                    System.out.print("Follow the rules and try again");
+                    }
+        
+        
+    }
+    
+}
